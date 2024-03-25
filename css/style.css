@@ -224,6 +224,13 @@ ul.switch{
     font-size: 17px;
     top: 1px;
   }
+  
+  @media (max-width: 991.98px) {
+    .switch > li.on {
+        top: 0px;
+      }
+  }
+
   .switch > li.off {
     right: 0;
     padding-right: 7px;
