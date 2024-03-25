@@ -228,7 +228,7 @@ ul.switch{
   }
   @media (max-width:991.98px) {
     .switch > li.on{
-        line-height: 25.5px;
+        line-height: 26px;
     }
   }
   .switch > li.off {
