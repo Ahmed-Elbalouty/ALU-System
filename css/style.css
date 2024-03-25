@@ -181,14 +181,23 @@ h6,
     }
 }
 
-ul.switch, ul.switch li {
+ul.switch{
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
+
   .switch {
     position: relative;
     display: inline-block;
+    align-self: center;
+    padding: 0 !important;
+  }
+  @media (max-width: 991.98px) {
+    ul.switch{
+        margin-top: 10px;
+        align-self: flex-start;
+    }
   }
   .switch > li {
     position: absolute;
