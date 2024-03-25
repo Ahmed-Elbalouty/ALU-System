@@ -467,6 +467,11 @@ ul.switch, ul.switch li {
     height: 350px;
     transition: .3s;
 }
+@media (max-width: 767px) {
+    .client img{
+        height: 300px;
+    }
+}
 
 .client:hover img,
 .clients-carousel .owl-item.center img {
@@ -519,6 +524,12 @@ ul.switch, ul.switch li {
     border-radius: 45px;
     font-size: 22px;
     transition: .5s;
+}
+.owl-item img{
+    filter: grayscale(100%);
+}
+.owl-item.center img{
+    filter: grayscale(0%);
 }
 /* End Our Clients */
 
