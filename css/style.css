@@ -232,6 +232,11 @@ ul.switch{
     top: 48%;
     transform: translateY(-50%);
   }
+  @media (max-width: 991.98px) {
+    .switch > li.off{
+        top: 50%;
+    }
+  }
   .check-toggle {
     position: absolute;
     margin-left: -9999px;
