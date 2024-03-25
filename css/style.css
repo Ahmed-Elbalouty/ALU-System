@@ -608,7 +608,7 @@ ul.switch{
 .projects .main-img {
     height: 650px;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
     text-align: center;
 }
 .projects .main-img img{
@@ -619,7 +619,7 @@ ul.switch{
 
 @media (max-width: 768px) {
     .projects .main-img{
-        height: 600px;
+        height: auto;
     }
     .projects .main-img img{
         width: 90%;
@@ -746,18 +746,18 @@ ul.switch{
 /* Start Gallery */
 .gallery .gallery-imgs .img{
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     text-align: center;
 }
 .gallery .img-sec img{
     max-width: 100%;
     width: 70%;
-    height: 700px;
+    height: 650px;
 }
 @media (max-width: 768px) {
     .gallery .img-sec img{
         width: 90%;
-        height: 600px;
+        height: auto;
     }
 }
 /* End Gallery */
