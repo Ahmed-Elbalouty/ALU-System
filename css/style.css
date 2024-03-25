@@ -222,13 +222,13 @@ ul.switch{
     padding-left: 5px;
     color: var(--primary);
     font-size: 17px;
-    top: 1px;
+    line-height: 8px;
   }
   .switch > li.off {
     right: 0;
     padding-right: 7px;
     color: #fff;
-    top: 5px;
+    line-height: 10px;
   }
   .check-toggle {
     position: absolute;
