@@ -201,7 +201,6 @@ ul.switch{
   }
   .switch > li {
     position: absolute;
-    top: 9px;
     pointer-events: none;
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight: bold;
@@ -222,19 +221,21 @@ ul.switch{
     padding-left: 5px;
     color: var(--primary);
     font-size: 17px;
-    top: 45%;
+    top: 48%;
     transform: translateY(-50%);
+    height: 25.5px;
   }
   .switch > li.off {
     right: 0;
     padding-right: 7px;
     color: #fff;
-    top: 48%;
+    top: 56%;
     transform: translateY(-50%);
+    height: 25.5px;
   }
   @media (max-width: 991.98px) {
     .switch > li.off{
-        top: 50%;
+        /* top: 52%; */
     }
   }
   .check-toggle {
