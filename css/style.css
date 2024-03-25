@@ -192,6 +192,8 @@ ul.switch{
     display: inline-block;
     align-self: center;
     padding: 0 !important;
+    display: flex;
+    align-items: center;
   }
   @media (max-width: 991.98px) {
     ul.switch{
@@ -221,22 +223,15 @@ ul.switch{
     padding-left: 5px;
     color: var(--primary);
     font-size: 17px;
-    top: 48%;
-    transform: translateY(-50%);
-    height: 25.5px;
+    height: 30px;
+    line-height: 30px;
   }
   .switch > li.off {
     right: 0;
     padding-right: 7px;
     color: #fff;
-    top: 56%;
-    transform: translateY(-50%);
-    height: 25.5px;
-  }
-  @media (max-width: 991.98px) {
-    .switch > li.off{
-        /* top: 52%; */
-    }
+    height: 30px;
+    line-height: 30px;
   }
   .check-toggle {
     position: absolute;
