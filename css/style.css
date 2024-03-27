@@ -558,7 +558,6 @@ ul.switch{
     background: var(--dark);
     margin-top: 180px;
 }
-
 .facts .border {
     border-color: rgba(255, 255, 255, .1) !important;
 }
@@ -601,7 +600,6 @@ ul.switch{
     font-size: 18px;
     color: var(--primary);
 }
-
 .product-item .btn:hover {
     color: #FFFFFF;
     background: var(--primary);
@@ -614,13 +612,12 @@ ul.switch{
     color: var(--primary);
 }
 .projects .main-img {
-    height: 650px;
     position: relative;
     margin-bottom: 120px;
     text-align: center;
 }
 .projects .main-img img{
-    height: 100%;
+    max-height: 650px;
     width: 70%;
     position: relative;
 }
@@ -672,6 +669,13 @@ ul.switch{
 .certificates img{
     max-width: 95%;
 }
+
+@media (max-width: 767px) {
+    .parteners .part-img{
+        text-align: left;
+    }
+}
+
 .certificates {
     text-align: center;
 }
@@ -697,14 +701,13 @@ ul.switch{
     text-align: center;
 }
 .desc-imgs .img img{
-    max-width: 100%;
     width: 70%;
-    height: 700px;
+    max-height: 650px;
 }
 @media (max-width: 768px) {
     .desc-imgs .img img{
         width: 90%;
-        height: 600px;
+        height: auto;
     }
 }
 
@@ -758,9 +761,8 @@ ul.switch{
     text-align: center;
 }
 .gallery .img-sec img{
-    max-width: 100%;
     width: 70%;
-    height: 650px;
+    max-height: 650px;
 }
 @media (max-width: 768px) {
     .gallery .img-sec img{
