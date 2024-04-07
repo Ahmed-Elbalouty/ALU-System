@@ -9,6 +9,7 @@
 
 body{
     direction: rtl ;
+    font-size: 18px;
 }
 
 .back-to-top {
@@ -238,31 +239,31 @@ ul.switch{
     width: 50%;
     text-align: center;
   }
-  input.check-toggle-round-flat:checked ~ .off {
+  input.check-toggle-round-flat:checked ~ .on {
     color: var(--primary);
   }
-  input.check-toggle-round-flat:checked ~ .on {
+  input.check-toggle-round-flat:checked ~ .off {
     color: #fff;
   }
-  .switch > li.on {
+  .switch > li.off {
     left: 0;
     padding-left: 5px;
     color: var(--primary);
-    font-size: 17px;
-    height: 30px;
-    line-height: 28px;
-  }
-  @media (max-width:991.98px) {
-    .switch > li.on{
-        line-height: 26px;
-    }
-  }
-  .switch > li.off {
-    right: 0;
-    padding-right: 7px;
-    color: #fff;
     height: 30px;
     line-height: 30px;
+}
+@media (max-width:991.98px) {
+    .switch > li.off{
+        line-height: 26px;
+    }
+}
+.switch > li.on {
+    right: 0;
+    padding-right: 7px;
+    font-size: 17px;
+    color: #fff;
+    height: 30px;
+    line-height: 28px;
   }
   .check-toggle {
     position: absolute;
@@ -396,7 +397,7 @@ ul.switch{
 
 @media (max-width: 400px) {
     #header-carousel .head{
-        margin-left: 85px;
+        margin-right: 85px;
     }
     #header-carousel .head h1{
         font-size: 25px;
@@ -414,7 +415,7 @@ ul.switch{
         font-size: 28px;
     }
     #header-carousel .head p{
-        font-size: 17px;
+        font-size: 18px;
     }
 }
 
@@ -465,6 +466,9 @@ ul.switch{
 .about .email,
 .about .call-us{
     margin-right: 1rem;
+}
+.check-icons p i{
+    margin-left: .5rem;
 }
 /* End About  */
 
@@ -698,7 +702,7 @@ ul.switch{
     font-size: 18px;
     margin: 10px auto;
     max-width: 600px;
-    text-align: left;
+    text-align: right;
 }
 .parteners .part-info p span{
     color: var(--primary);
@@ -727,6 +731,14 @@ ul.switch{
     color: var(--primary);
 }
 /* End parteners & certificates */
+
+
+/* Start Contact Us */
+.contact .email,
+.contact .call-us{
+    margin-right: .5rem;
+}
+/* End Contact Us */
 
 
 /* Start Category Description */
@@ -870,31 +882,44 @@ ul.switch{
 .footer {
     color: #c1bcbd;
 }
+.footer .social-links a{
+    margin-left: .5rem;
+}
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
     padding: 0;
-    text-align: left;
     color: #c1bcbd;;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    position: relative;
+    left: -17px;
 }
 .footer .btn.btn-link::before {
-    position: relative;
+    position: absolute;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    margin-right: 10px;
+    transform: rotate(180deg);
+    right: -17px;
 }
 .footer .btn.btn-link:hover {
     color: var(--light);
     box-shadow: none;
-    transform: translateX(10px);
+    transform: translateX(-10px);
 }
 .footer .address i{
     position: relative;
     top: 4px;
+}
+.footer .address i,
+.footer .phone i,
+.footer .mail i{
+    margin-left: 1rem;
+}
+.footer .links a{
+    text-align: right;
 }
 .cer-img{
     width: 80px;

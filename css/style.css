@@ -232,31 +232,31 @@ ul.switch{
     width: 50%;
     text-align: center;
   }
-  input.check-toggle-round-flat:checked ~ .off {
+  input.check-toggle-round-flat:checked ~ .on {
     color: var(--primary);
   }
-  input.check-toggle-round-flat:checked ~ .on {
+  input.check-toggle-round-flat:checked ~ .off {
     color: #fff;
   }
-  .switch > li.on {
+  .switch > li.off {
     left: 0;
     padding-left: 5px;
     color: var(--primary);
-    font-size: 17px;
-    height: 30px;
-    line-height: 28px;
-  }
-  @media (max-width:991.98px) {
-    .switch > li.on{
-        line-height: 26px;
-    }
-  }
-  .switch > li.off {
-    right: 0;
-    padding-right: 7px;
-    color: #fff;
     height: 30px;
     line-height: 30px;
+}
+@media (max-width:991.98px) {
+    .switch > li.off{
+        line-height: 26px;
+    }
+}
+.switch > li.on {
+    right: 0;
+    padding-right: 7px;
+    font-size: 17px;
+    color: #fff;
+    height: 30px;
+    line-height: 28px;
   }
   .check-toggle {
     position: absolute;
@@ -456,9 +456,13 @@ ul.switch{
         margin-bottom: 30px;
     }
 }
+
 .about .email,
 .about .call-us{
     margin-left: 1rem;
+}
+.check-icons p i{
+    margin-right: .5rem;
 }
 /* End About  */
 
@@ -722,6 +726,14 @@ ul.switch{
 /* End parteners & certificates */
 
 
+/* Start Contact Us */
+.contact .email,
+.contact .call-us{
+    margin-left: .5rem;
+}
+/* End Contact Us */
+
+
 /* Start Category Description */
 .category-description .desc-title{
     color: var(--primary);
@@ -863,6 +875,9 @@ ul.switch{
 .footer {
     color: #c1bcbd;
 }
+.footer .social-links a{
+    margin-right: .5rem;
+}
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
@@ -888,6 +903,11 @@ ul.switch{
 .footer .address i{
     position: relative;
     top: 4px;
+}
+.footer .address i,
+.footer .phone i,
+.footer .mail i{
+    margin-right: 1rem;
 }
 .cer-img{
     width: 80px;
