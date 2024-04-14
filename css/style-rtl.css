@@ -177,7 +177,6 @@ h6,
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
         margin-left: 18px;
-        font-size: 16px;
     }
 }
 
@@ -211,6 +210,7 @@ h6,
 
 .dropdown-menu {
     min-width: fit-content;
+    text-align: right;
 }
 .dropdown-menu[data-bs-popper] {
     top: 85%;
@@ -218,7 +218,6 @@ h6,
 .dropdown-item{
     padding: 6px 40px;
 }
-
 .navbar .dropdown-toggle::after{
     margin-left: 0;
     margin-right: 8px;
