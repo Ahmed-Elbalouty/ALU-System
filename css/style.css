@@ -7,6 +7,10 @@
     --dark: #100f0f;
 }
 
+body{
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -37,6 +41,9 @@ h6,
 .h6,
 .fw-semi-bold {
     font-weight: 500 !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Play", sans-serif;
 }
 /* End Global Rules */
 
@@ -401,7 +408,6 @@ h6,
 }
 .client {
     position: relative;
-    display: block;
 }
 .client img {
     height: 350px;
@@ -563,12 +569,12 @@ h6,
 }
 
 .projects .main-img .title-project{
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 50%;
     background-color: var(--primary);
     padding: 15px 30px;
-    transform: translate(-50%, 50%);
+    width: fit-content;
     transform: translateX(-50%);
     border-radius: 5px;
 }
