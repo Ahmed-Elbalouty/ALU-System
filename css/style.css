@@ -5,7 +5,6 @@
     --secondary: #5F656F;
     --light: #F5F5F5;
     --dark: #100f0f;
-    --alt : #2c3242;
 }
 
 body{
@@ -509,7 +508,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .product-title h3{
     font-size: 25px;
-    color: var(--alt);
+    color: var(--secondary);
 }
 .product-item .btn {
     position: absolute;
@@ -659,11 +658,11 @@ h1, h2, h3, h4, h5, h6{
 
 .desc-imgs .img .title{
     position: absolute;
-    top: 0;
+    bottom: 100%;
     left: 50%;
     background-color: var(--primary);
     padding: 15px 30px;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
     border-radius: 5px;
 }
 .desc-imgs .img .title h4{
@@ -720,10 +719,10 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* Start Factory */
-.factory .video{
-    max-height: 500px;
+.video{
+    width: 100%;
 }
-.factory video{
+video{
     width: 100%;
     object-fit: fill;
     height: 100%;
