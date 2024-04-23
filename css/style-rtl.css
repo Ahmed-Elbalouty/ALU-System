@@ -646,7 +646,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 40px;
 }
 .category-description .desc-title.two{
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     margin-top: 70px;
 }
 .desc-imgs .img{
@@ -667,7 +667,7 @@ h1, h2, h3, h4, h5, h6{
 
 .desc-imgs .img .title{
     position: absolute;
-    bottom: 100%;
+    bottom: calc(100% + 15px);
     left: 50%;
     background-color: var(--primary);
     padding: 15px 30px;
