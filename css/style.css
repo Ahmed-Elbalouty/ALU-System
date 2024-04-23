@@ -641,7 +641,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 40px;
 }
 .category-description .desc-title.two{
-    margin-bottom: 130px;
+    margin-bottom: 80px;
     margin-top: 70px;
 }
 .desc-imgs .img{
@@ -661,13 +661,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .desc-imgs .img .title{
-    position: absolute;
-    bottom: calc(100% + 15px);
+    position: relative;
+    /* bottom: calc(100% + 15px); */
     left: 50%;
     background-color: var(--primary);
     padding: 15px 30px;
     transform: translateX(-50%);
     border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 15px;
+    max-width: 70%;
 }
 .desc-imgs .img .title h4{
     margin-bottom: 0;
@@ -717,6 +720,9 @@ h1, h2, h3, h4, h5, h6{
     .gallery .img-sec img{
         width: 90%;
         height: auto;
+    }
+    .desc-imgs .img .title{
+        max-width: 90%;
     }
 }
 /* End Gallery */
