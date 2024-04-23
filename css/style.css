@@ -44,6 +44,7 @@ h6,
 }
 h1, h2, h3, h4, h5, h6{
     font-family: "Play", sans-serif;
+    color: var(--secondary);
 }
 /* End Global Rules */
 
@@ -662,7 +663,6 @@ h1, h2, h3, h4, h5, h6{
 
 .desc-imgs .img .title{
     position: relative;
-    /* bottom: calc(100% + 15px); */
     left: 50%;
     background-color: var(--primary);
     padding: 15px 30px;
