@@ -929,7 +929,7 @@ video{
 .close-icon {
     position: absolute;
     top: 20px;
-    right: 15px;
+    right: 20px;
     color: white;
     font-size: 25px;
     cursor: pointer;
