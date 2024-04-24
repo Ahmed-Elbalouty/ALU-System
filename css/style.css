@@ -683,6 +683,7 @@ h1, h2, h3{
     .desc-imgs .img img{
         width: 90%;
         height: auto;
+        min-height: 250px;
     }
 }
 
