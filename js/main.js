@@ -90,3 +90,28 @@ function carouselHover(element, hover) {
         $(carousel).carousel('cycle');
     }
 }
+
+
+// Handle footer images when click
+$(document).ready(function() {
+    // Function to open modal when clicking on an image
+    $('.cer-img').click(function(event) {
+        event.stopPropagation(); // Prevent event bubbling
+        var imgSrc = $(this).attr('src');
+        var modal = '<div class="modal"><span class="close-icon"><i class="fas fa-times"></i></span><img src="' + imgSrc + '"></div>';
+        $('body').append(modal);
+    });
+
+    // Function to close modal when clicking anywhere outside the modal
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest('.modal').length) {
+            $('.modal').remove();
+        }
+    });
+
+    // Function to close modal when clicking on the close icon or the modal itself
+    $(document).on('click', '.close-icon, .modal', function(event) {
+        event.stopPropagation(); // Prevent event bubbling
+        $('.modal').remove();
+    });
+});
