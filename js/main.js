@@ -35,7 +35,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1000, 'linear');
+        $('html, body').animate({scrollTop: 0}, 200, 'linear');
         return false;
     });
 

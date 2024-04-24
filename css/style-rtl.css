@@ -559,9 +559,10 @@ h1, h2, h3{
 /* Start Projects */
 .projects h2{
     color: var(--primary);
+    margin-bottom: 100px;
 }
 .projects .project-data{
-    margin-bottom: 120px;
+    margin-bottom: 150px;
 }
 .projects .main-img {
     position: relative;
@@ -577,17 +578,12 @@ h1, h2, h3{
     margin: 20px auto 0;
     font-size: 18px;
 }
-@media (max-width: 767px) {
-    .projects .main-img img{
-        width: 90%;
-        height: auto;
-    }
-    .projects .project-info {
-        width: 90%;
-        font-size: 16px;
-    }
+.projects .project-info span{
+    display: block;
 }
-
+.projects .project-info span:not(:last-child){
+    margin-bottom: 5px;
+}
 .projects .main-img .title-project{
     position: relative;
     bottom: 0;
@@ -601,6 +597,23 @@ h1, h2, h3{
 .projects .main-img .title-project h4{
     color: white;
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .projects .main-img img{
+        width: 90%;
+        height: auto;
+    }
+    .projects .project-info {
+        width: 90%;
+        font-size: 17px;
+    }
+    .projects .main-img .title-project{
+        max-width: 90%;
+    }
+    .projects .main-img .title-project h4{
+        font-size: 19px;
+    }
 }
 /* End Projects */
 
@@ -697,6 +710,65 @@ h1, h2, h3{
     margin-top: 60px;
 }
 /* End Category Description */
+
+
+/* Start More Products */
+.more-products .desc-title{
+    color: var(--primary);
+    margin-bottom: 40px;
+}
+.more-products .desc-title.two{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.more-products .img{
+    position: relative;
+}
+.more-products .holder{
+    margin-bottom: 150px;
+}
+.more-products .img img{
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .more-products .img img{
+        height: auto;
+    }
+}
+
+.more-products .img .title{
+    position: relative;
+    left: 50%;
+    background-color: var(--primary);
+    padding: 15px 30px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 15px;
+    max-width: 70%;
+}
+.more-products .img .title h4{
+    margin-bottom: 0;
+    color: white;
+}
+
+.more-products .img-sec{
+    margin-top: 60px;
+}
+.more-products .description{
+    font-size: 19px;
+    position: relative;
+    line-height: 1.7;
+    align-self: center;
+}
+@media (max-width: 991px) {
+    .more-products .description{
+        margin-top: 10px;
+    }
+}
+/* End More Products */
 
 
 /* Start Project Description */
