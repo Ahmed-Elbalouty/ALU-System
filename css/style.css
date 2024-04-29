@@ -568,21 +568,22 @@ h1, h2, h3{
 }
 .projects .project span{
     position: absolute;
-    width: 0;
+    width: 100%;
     padding: 10px;
     text-align: center;
-    color: transparent;
+    color: #fff;
     bottom: 0px;
     left: 0;
     font-size: 18px;
     font-weight: 600;
+    overflow: hidden;
     text-overflow: ellipsis;
     transition: all .2s;
+    background-color: var(--primary);
+    opacity: 0;
 }
 .projects .project a:hover > span{
-    width: 100%;
-    color: white;
-    background-color: var(--primary);
+    opacity: 1;
 }
 .projects .project a:hover > img{
     filter: grayscale(0%);

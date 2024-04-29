@@ -117,8 +117,3 @@ $(document).ready(function() {
 });
 
 
-// Get Project Title From Its Name
-let project = document.querySelectorAll(".projects .project span");
-for(let i = 0; i < project.length; i++){
-    console.log(project[i].setAttribute("title", project[i].innerHTML));
-}
