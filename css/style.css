@@ -176,7 +176,9 @@ h1, h2, h3{
 
 @media (min-width:991.99px) and (max-width: 1150px){
     .navbar .navbar-nav .nav-link {
-        margin-right: 16px;
+        margin-right: 14px;
+        font-size: 16px;
+        font-weight: 600;
     }
 }
 
@@ -552,64 +554,38 @@ h1, h2, h3{
 
 
 /* Start Projects */
-.projects h2{
-    color: var(--primary);
-    margin-bottom: 100px;
+.projects .project{
+    padding: 0;
 }
-.projects .project-data{
-    margin-bottom: 150px;
-}
-.projects .main-img {
-    position: relative;
-    text-align: center;
-}
-.projects .main-img img{
-    max-height: 650px;
-    width: 70%;
-    position: relative;
-}
-.projects .project-info {
-    width: 70%;
-    margin: 30px auto 0;
-    font-size: 18px;
-}
-.projects .project-info span{
+.projects .project a{
     display: block;
-}
-.projects .project-info span:not(:last-child){
-    margin-bottom: 5px;
-}
-.projects .main-img .title-project{
+    width: 100%;
     position: relative;
-    bottom: -15px;
-    left: 50%;
-    background-color: var(--primary);
-    padding: 15px 30px;
-    width: fit-content;
-    transform: translateX(-50%);
-    border-radius: 5px;
 }
-.projects .main-img .title-project h4{
+.projects .project img{
+    width: 100%;
+    filter: grayscale(100%);
+}
+.projects .project span{
+    position: absolute;
+    width: 0;
+    padding: 10px;
+    text-align: center;
+    color: transparent;
+    bottom: 0px;
+    left: 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    transition: all .2s;
+}
+.projects .project a:hover > span{
+    width: 100%;
     color: white;
-    margin-bottom: 0;
-    font-size: 22px;
+    background-color: var(--primary);
 }
-
-@media (max-width: 768px) {
-    .projects .main-img img{
-        width: 90%;
-        height: auto;
-    }
-    .projects .project-info {
-        width: 90%;
-        font-size: 17px;
-    }
-    .projects .main-img .title-project{
-        max-width: 90%;
-    }
-    .projects .main-img .title-project h4{
-        font-size: 19px;
-    }
+.projects .project a:hover > img{
+    filter: grayscale(0%);
 }
 /* End Projects */
 
