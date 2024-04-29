@@ -176,7 +176,7 @@ h1, h2, h3{
 
 @media (min-width:991.99px) and (max-width: 1150px){
     .navbar .navbar-nav .nav-link {
-        margin-right: 16px;
+        margin-right: 15px;
     }
 }
 
