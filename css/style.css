@@ -564,6 +564,19 @@ h1, h2, h3{
     width: 100%;
     filter: grayscale(100%);
 }
+
+@media (max-width: 767px) {
+    .projects .project img{
+        max-height: 90vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .projects .project img{
+        height: 300px;
+    }
+}
+
 .projects .project span{
     position: absolute;
     width: 100%;
@@ -750,6 +763,7 @@ h1, h2, h3{
 .project-description .project-desc-info p{
     max-width: 380px;
 }
+
 @media (max-width: 575px) {
     .project-description .project-desc-info  p{
         max-width: 280px;
