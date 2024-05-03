@@ -49,9 +49,9 @@
 
     // Clients Carousel
     $(".clients-carousel").owlCarousel({
+        loop: true,
         autoplay: true,
         smartSpeed: 1000,
-        loop: true,
         center: true,
         dots: false,
         nav: true,
@@ -121,19 +121,16 @@ $(document).ready(function() {
 
 // Handle swiper actions
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     loop: true,
 
     autoplay: {
-        delay: 1000, // Autoplay delay in milliseconds
+        delay: 1200,
     },
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
 
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

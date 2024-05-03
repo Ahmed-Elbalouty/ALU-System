@@ -759,6 +759,7 @@ h1, h2, h3{
 /* Start Project Description */
 .project-description .project-desc-info  h3{
     color: var(--primary);
+    max-width: 95%;
 }
 .project-description .project-desc-info span{
     display: block;
@@ -775,13 +776,53 @@ h1, h2, h3{
     }
 }
 
-.project-desc-img  img{
-    height: 250px;
+.swiper{
+    height: 450px;
+    max-height: 90vh;
+    margin: auto;
+}
+@media (min-width: 992px) {
+    .swiper{
+        order: 2;
+    }
 }
 
-.slider .project-desc-img:hover img,
-.slider .clients-carousel .owl-item.center img {
-    margin-top: 0px;
+.swiper img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.swiper-button-next{
+    right: 14px;
+}
+.swiper-button-prev{
+    left: 14px;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: white;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    border-radius: 50%;
+}
+.swiper-button-next::after{
+    position: relative;
+    
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    opacity: .5;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--primary);
+    opacity: 1;
 }
 /* End Project Description */
 
@@ -942,52 +983,3 @@ video{
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
 /* End Footer & copyright */
-
-.swiper{
-    height: 450px;
-    max-height: 90vh;
-    margin: auto;
-}
-@media (min-width: 992px) {
-    .swiper{
-        order: 2;
-    }
-}
-
-.swiper img{
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-}
-
-.swiper-button-next{
-    right: 14px;
-}
-.swiper-button-prev{
-    left: 14px;
-}
-.swiper-button-next::after, .swiper-button-prev::after{
-    color: white;
-    font-size: 18px;
-    width: 45px;
-    height: 45px;
-    background-color: var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 auto;
-    border-radius: 50%;
-}
-.swiper-button-next::after{
-    position: relative;
-    
-}
-.swiper-pagination-bullet{
-    width: 12px;
-    height: 12px;
-    opacity: .5;
-}
-.swiper-pagination-bullet-active{
-    background-color: var(--primary);
-    opacity: 1;
-}
