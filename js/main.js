@@ -117,3 +117,35 @@ $(document).ready(function() {
 });
 
 
+
+
+// Handle swiper actions
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+
+    autoplay: {
+        delay: 1000, // Autoplay delay in milliseconds
+    },
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
+const swiperContainer = document.querySelector('.swiper');
+
+swiperContainer.addEventListener('mouseenter', function() {
+    swiper.autoplay.stop(); // Pause autoplay on mouse enter
+});
+
+swiperContainer.addEventListener('mouseleave', function() {
+    swiper.autoplay.start(); // Resume autoplay on mouse leave
+});
