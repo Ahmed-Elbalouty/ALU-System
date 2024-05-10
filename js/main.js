@@ -49,9 +49,9 @@
 
     // Clients Carousel
     $(".clients-carousel").owlCarousel({
+        loop: true,
         autoplay: true,
         smartSpeed: 1000,
-        loop: true,
         center: true,
         dots: false,
         nav: true,
@@ -114,4 +114,35 @@ $(document).ready(function() {
         event.stopPropagation(); // Prevent event bubbling
         $('.modal').remove();
     });
+});
+
+
+
+
+// Handle swiper actions
+const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    autoplay: {
+        delay: 1200,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
+const swiperContainer = document.querySelector('.swiper');
+
+swiperContainer.addEventListener('mouseenter', function() {
+    swiper.autoplay.stop(); // Pause autoplay on mouse enter
+});
+
+swiperContainer.addEventListener('mouseleave', function() {
+    swiper.autoplay.start(); // Resume autoplay on mouse leave
 });
