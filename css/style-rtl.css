@@ -177,7 +177,7 @@ h1, h2, h3{
     outline: none;
 }
 
-@media (min-width:991.99px) and (max-width: 1150px){
+@media (min-width:992px) and (max-width: 1200px){
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
         margin-left: 18px;
