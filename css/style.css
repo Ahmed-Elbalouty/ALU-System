@@ -288,7 +288,7 @@ h1, h2, h3{
 }
 #header-carousel .head a{
     padding: 15px 40px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 
